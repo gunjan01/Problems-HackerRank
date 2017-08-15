@@ -17,7 +17,7 @@ int Search(struct node* root, int data)
 	else if(data==root->data)
 		return 1;
 	
-	else if(data<(root->data))
+	else if(data>(root->data))
 		Search(root->right,data);
 	
 	else
